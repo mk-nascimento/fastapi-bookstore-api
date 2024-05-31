@@ -1,0 +1,10 @@
+version: "0.2"
+ignorePaths:
+  - .vscode/
+  - .devcontainer/
+words:
+  - devcontainer
+  - fastapi
+  - uvicorn
+  - varchar
+  - venv
