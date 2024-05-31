@@ -1,0 +1,46 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/postgres
+{
+	"name": "Python with PostgreSQL",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "app",
+	"runServices": ["database"],
+	"forwardPorts": [5432],
+	"workspaceFolder": "/workspaces",
+	"features": {
+		"ghcr.io/devcontainers/features/common-utils:2": { "configureZshAsDefaultShell": true },
+		"ghcr.io/devcontainers-contrib/features/poetry:2": { "version": "1.8.*" },
+		"ghcr.io/devcontainers/features/java:1": {},
+		"ghcr.io/devcontainers/features/node:1": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"aaron-bond.better-comments",
+				"bierner.github-markdown-preview",
+				"dotenv.dotenv-vscode",
+				"eamodio.gitlens",
+				"editorconfig.editorconfig",
+				"ms-python.black-formatter",
+				"ms-python.isort",
+				"ms-vscode-remote.remote-containers",
+				"oderwat.indent-rainbow",
+				"redhat.vscode-yaml",
+				"sonarsource.sonarlint-vscode",
+				"streetsidesoftware.code-spell-checker-portuguese-brazilian",
+				"streetsidesoftware.code-spell-checker",
+				"tamasfe.even-better-toml",
+				"visualstudioexptteam.vscodeintellicode"
+			],
+			"settings": {
+				"cSpell.language": "en,pt-BR",
+				"extensions.ignoreRecommendations": true,
+				"python.defaultInterpreterPath": "./.venv/bin/python"
+			}
+		}
+	},
+	"updateContentCommand": "poetry install",
+	"postStartCommand": "sed -i 's/^plugins=(/plugins=(git-prompt gitfast command-not-found poetry /' ~/.zshrc",
+	"containerEnv": { "POETRY_VIRTUALENVS_IN_PROJECT": "1" },
+	"shutdownAction": "stopCompose"
+}
