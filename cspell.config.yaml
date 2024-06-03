@@ -5,6 +5,7 @@ ignorePaths:
 words:
   - devcontainer
   - fastapi
+  - pyproject
   - uvicorn
   - varchar
   - venv
