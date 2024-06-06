@@ -5,7 +5,10 @@ ignorePaths:
 words:
   - devcontainer
   - fastapi
+  - nullable
+  - pydantic
   - pyproject
+  - sqlalchemy
   - uvicorn
   - varchar
   - venv
