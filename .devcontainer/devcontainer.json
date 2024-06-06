@@ -9,6 +9,7 @@
 	"workspaceFolder": "/workspaces",
 	"features": {
 		"ghcr.io/devcontainers/features/common-utils:2": { "configureZshAsDefaultShell": true },
+		"ghcr.io/devcontainers/features/python": { "toolsToInstall": "pylint,pytest" },
 		"ghcr.io/devcontainers-contrib/features/poetry:2": { "version": "1.8.*" },
 		"ghcr.io/devcontainers/features/java:1": {},
 		"ghcr.io/devcontainers/features/node:1": {}
@@ -18,12 +19,10 @@
 			"extensions": [
 				"aaron-bond.better-comments",
 				"bierner.github-markdown-preview",
+				"charliermarsh.ruff",
 				"dotenv.dotenv-vscode",
 				"eamodio.gitlens",
 				"editorconfig.editorconfig",
-				"ms-python.black-formatter",
-				"ms-python.isort",
-				"ms-vscode-remote.remote-containers",
 				"oderwat.indent-rainbow",
 				"redhat.vscode-yaml",
 				"sonarsource.sonarlint-vscode",

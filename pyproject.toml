@@ -43,7 +43,6 @@ pre_test = "task lint"
 post_test = "coverage html"
 test = "pytest -s -x --cov=bookstore -vv"
 dev = "fastapi dev bookstore/main.py"
-run = "fastapi run bookstore/main.py"
 req = 'poetry export --without-hashes -f requirements.txt -o requirements.txt'
 
 [build-system]
