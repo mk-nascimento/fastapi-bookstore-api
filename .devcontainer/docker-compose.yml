@@ -11,7 +11,7 @@ services:
       PGPASSWORD: postgres
       PGUSER: postgres
       PGDB: postgres
-      PGHOST: postgresdb
+      PGHOST: localhost
       PGPORT: 5432
 
     volumes:

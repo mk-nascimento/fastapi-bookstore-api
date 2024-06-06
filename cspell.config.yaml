@@ -6,9 +6,16 @@ words:
   - devcontainer
   - fastapi
   - nullable
+  - PGDB
+  - PGHOST
+  - PGPORT
+  - PGUSER
+  - postgresql
+  - psycopg
   - pydantic
   - pyproject
   - sqlalchemy
+  - unicode
   - uvicorn
   - varchar
   - venv
