@@ -81,7 +81,7 @@ Execute a aplicação com o comando:
 uvicorn bookstore.main:app --reload
 ```
 
-A API estará disponível em http://127.0.0.1:5000.
+A API estará disponível em http://127.0.0.1:8000.
 
 ## Licença
 
